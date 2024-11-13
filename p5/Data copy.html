@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Data copy.css">
+  
+</head>
+<body>
+    <header class="header">
+        <img src="aset/logo_skensa-removebg-preview.png" alt="">
+        <h3>SMK NEGERI 1 DENPASAR</h3>
+        <ul>
+            <li><a href="dasbord.html">Home</a></li>
+            <li><a href="#" class="active">Profile</a></li>
+            <li><a href="Data.html">Class</a></li>
+            <li><a href="log-in.html">Log-Out</a></li>
+           
+         </ul>
+    </header>
+
+
+    <div class="welcome" id="welcome"></div>
+    <div class="headerimg">
+        <div class="img">
+            <img src="aset/Screenshot_2024-11-12_175808-removebg-preview.png" alt="" class="first-text">
+            <img src="aset/foto__5_of_7_-removebg-preview.png" alt="" class="first">
+        </div>
+
+            
+  
+</div>
+
+
+
+    <!-- Buttons to navigate to different sections -->
+    <div class="button-container">
+        <a href="#menu1" class="left-button">
+            <h5>Guru Produktif</h5>
+        </a>
+        <a href="#menu2" class="right-button">
+            <h5 onclick="normatif()">Guru Normatif</h5>
+        </a>
+    </div>
+
+    <!-- Program Unggulan -->
+    <section class="section" id="program">
+        <div class="cards">
+            <div class="card">
+                <img src="aset/bu sanis.jpg" alt="Foto Program Akademik">
+                <h3>Bu Sanis</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo()">Info Selengkapnya</a>
+            </div>
+        
+            <div class="card">
+                <img src="aset/bu dayu.jpg" alt="Foto Ekstrakurikuler">
+                <h3>Bu Dayu</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo2()">Info Selengkapnya</a>
+            </div>
+            <div class="card">
+                <img src="aset/bu alit.jpg" alt="Foto Ekstrakurikuler">
+                <h3>Bu Alit</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo3()">Info Selengkapnya</a>
+            </div>
+            <div class="card">
+                <img src="aset/pak agung.jpg" alt="Foto Pengembangan Karakter">
+                <h3>Pak Agung</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo4()">Info Selengkapnya</a>
+            </div>
+            <div class="card">
+                <img src="aset/pak dangin.jpg" alt="Foto Ekstrakurikuler">
+                <h3>Pak Dangin</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo5()">Info Selengkapnya</a>
+            </div>
+            <div class="card">
+                <img src="aset/pak ngurah.jpg" alt="Foto Ekstrakurikuler">
+                <h3>Pak Ngurah</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo6()">Info Selengkapnya</a>
+            </div>
+            <div class="card">
+                <img src="aset/pak yana.jpg" alt="Foto Ekstrakurikuler">
+                <h3>Pak Yana</h3>
+                <a href="javascript:void(0);" class="my-button" onclick="showInfo7()">Info Selengkapnya</a>
+            </div> 
+        </div>   
+    </section>
+
+    <footer>
+        <h4>© 2024 yoanmar</h4>
+    </footer>
+
+    <!--container 1-->
+    <div class="container-utama" id="info-container-sanis">
+        <div class="container-dalam">
+            <img class="foto-guru" src="aset/sns-removebg-preview.png" alt="bu sanis">
+    
+            <!-- Bubble Container bu sanis-->
+            <div class="bubble-container-sanis">
+                <h3 class="bubble-title">Ni Wayan Sanistri Wiranda, S.Pd</h3>
+                <div class="bubble">NIP      : 19970315 202321 2 020 </div>
+                <div class="bubble">Mengajar : Dasar-Dasar Teknik Elektronika dan PKK</div>
+                <div class="bubble">Alamat   : Jl. Singasari Gang Perkutut No.25, Denpasar</div>
+                <button class="bubble-kntk" onclick="pesan()">Contact Person</button>
+                <button class="bubble-kntk2" onclick="closeInfo()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+<!--container 2-->
+<div class="container-utama container-utama1" id="info-container-dayu">
+    <div class="container-dalam">
+        <img class="foto-guru" src="aset/dayu-removebg-preview.png" alt="bu sanis">
+
+        <!-- Bubble Container bu sanis-->
+        <div class="bubble-container-dayu">
+            <h3 class="bubble-title">Ida Ayu Seriani, S.Pd.</h3>
+            <div class="bubble">NIP      : 19650725 1989032012 </div>
+            <div class="bubble">Mengajar : Penerapan Rangkaian Elektronika</div>
+            <div class="bubble">Alamat   : Jalan Raya Darmasaba, GG gelatik no 4 Badung</div>
+            <button class="bubble-kntk" onclick="pesan2()">Contact Person</button>
+            <button class="bubble-kntk2" onclick="closeInfo2()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-utama" id="info-container-alit">
+    <div class="container-dalam">
+        <img class="foto-guru" src="aset/alit-removebg-preview.png" alt="bu sanis">
+
+        <div class="bubble-container-alit">
+            <h3 class="bubble-title">Ni Ketut Alit Aryanti, S.T.</h3>
+            <div class="bubble">NIP      : 19840310 202321 2 027</div>
+            <div class="bubble">Mengajar : Perawatan dan Perbaikan Peralatan Audio Video, Penerapan Sistem Radio dan Televisi, PKK, Mapel Pilihan</div>
+            <div class="bubble">Alamat   : Jl. Singasari Gang Perkutut No.25, Denpasar</div>
+            <button class="bubble-kntk" onclick="pesan3()">Contact Person</button>
+            <button class="bubble-kntk2" onclick="closeInfo3()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+    <div class="container-utama" id="info-container-agung">
+        <div class="container-dalam">
+            <img class="foto-guru" src="aset/kadek_agung-removebg-preview.png" alt="bu sanis">
+            
+
+            
+            <!-- Bubble Container pak agung-->
+            <div class="bubble-container-agung">
+                <h3 class="bubble-title"> I Made Agung Januarta, S.ST</h3>
+                <div class="bubble">NIP      : 19880129 202321 1 004</div>
+                <div class="bubble">Mengajar : Mata Pelajaran Kompetensi Keahlian</div>
+                <div class="bubble">Alamat   : Jalan Karya Makmur, Gang Permata, No 10, Ubung Kaja</div>
+                <button class="bubble-kntk" onclick="pesan4()">Contact Person</button>
+                <button class="bubble-kntk2" onclick="closeInfo4()">Cancel</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container-utama" id="info-container-dangin">
+    <div class="container-dalam">
+        <img class="foto-guru" src="aset/dangin-removebg-preview.png" alt="bu sanis">
+        
+
+        
+        <!-- Bubble Container pak dangin-->
+        <div class="bubble-container-dangin">
+            <h3 class="bubble-title">I Gede Dangin Bagus Komang Surya Nuarsa, S.Pd</h3>
+            <div class="bubble">NIP      : 19950327 202421 1 026</div>
+            <div class="bubble">Mengajar : Pemrograman dan Aplikasi Mikrokontrole</div>
+            <div class="bubble">Alamat   : Jalan Poksai No.3, Gulingan, Mengwi, Badung</div>
+            <button class="bubble-kntk" onclick="pesan5()">Contact Person</button>
+            <button class="bubble-kntk2" onclick="closeInfo5()">Cancel</button>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container-utama" id="info-container-ngurah">
+<div class="container-dalam">
+    <img class="foto-guru" src="aset/ngurah1-removebg-preview.png" alt="bu sanis">
+    
+
+    
+    <!-- Bubble Container pak ngurah-->
+    <div class="bubble-container-ngurah">
+        <h3 class="bubble-title"> Gusti Ngurah Made Putra Arthayasa, S.T</h3>
+        <div class="bubble">NIP      : 19940302202321014</div>
+        <div class="bubble">Mengajar : Dasar-Dasar Kompetensi Keahlian</div>
+        <div class="bubble">Alamat   : Br Dinas Munggu Jeroan, Serampingan Selemadeg </div>
+        <button class="bubble-kntk" onclick="pesan6()">Contact Person</button>
+        <button class="bubble-kntk2" onclick="closeInfo6()">Cancel</button>
+    </div>
+    
+</div>
+</div>
+
+<div class="container-utama" id="info-container-yana">
+<div class="container-dalam">
+    <img class="foto-guru" src="aset/yana-removebg-preview.png" alt="bu sanis">
+    
+
+    
+    <!-- Bubble Container pak yana-->
+    <div class="bubble-container-yana">
+        <h3 class="bubble-title">I Made Yana Pratyaksa, S.Pd</h3>
+        <div class="bubble">NIP      : - </div>
+        <div class="bubble">Mengajar : Produk Kreatif dan Kewirausahaan, Informatika</div>
+        <div class="bubble">Alamat   : Perumahan Agung Kirana Indah, Nomor 68 Br. Puseh Kediri Tabanan</div>
+        <button class="bubble-kntk" onclick="pesan7()">Contact Person</button>
+        <button class="bubble-kntk2" onclick="closeInfo7()">Cancel</button>
+    
+</div>
+</div>
+
+    <script src="data.js"></script>
+
+</body>
+</html>

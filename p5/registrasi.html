@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="login-container" id="login-container">
+            <div class="login-right">
+                <a href="log-in.html" class="back-button">
+                    <img src="aset/back.png" alt="Kembali" onclick="closeModal1()"> <!-- Ganti dengan path ke logo panah Anda -->
+                </a>
+            
+
+                <form action="log-in.html">
+                    <h2 class="login">Register</h2>
+
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    <label for="psw"><b>Konfirmasi Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    
+                    <button id="loginButton" type="submit">Register</button>
+                    
+                </form>
+                
+            </div>
+            <div class="login-left">
+
+                <h1>Welcome Back!</h2>
+                    <p>Please login to your account</p>
+
+            </div>
+
+            
+            
+        </div>
+ 
+  
+</body>
+</html>

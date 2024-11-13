@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-image: url('aset/blue-orange-triangular-background-free-vector.jpg'); /* Ganti dengan URL gambar wallpaper Anda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.login-container {
+  display: block;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.login-left {
+  flex: 1;
+  background-color: #B11114;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-left h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-right {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #B11114;
+  color: white;
+}
+
+.psw {
+  float: right;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.register{
+  font-size: 15px;
+}
+.lupapw{
+  font-size: 13px;
+}
+p{
+  text-align: center; 
+  margin:10px 0;
+}
+
+.login {
+  text-align: center;
+ padding-bottom: 30px;
+}
+
+.back-button img {
+  width: 30px; 
+  height: auto;
+}
+.back-button {
+  position: absolute; 
+  top: 20px; 
+  left: 20px; 
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.login-right {
+  position: relative; 
+}
